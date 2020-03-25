@@ -22,7 +22,7 @@ class CreateAdmissionFormsTable extends Migration
             $table->string('dob_ad');
             $table->string('nationality');
             $table->string('religion');
-            $table->string('province');
+            // $table->string('province');
             // $table->string('zone');
             // $table->string('district');
             // $table->string('municipality');
@@ -58,7 +58,7 @@ class CreateAdmissionFormsTable extends Migration
             $table->string('remarks_4')->nullable();
             $table->string('total_obtained_marks')->nullable();
             $table->string('total_marks')->nullable();
-            $table->boolean('status')->default(1);
+            // $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }
