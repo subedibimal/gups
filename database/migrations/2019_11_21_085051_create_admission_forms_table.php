@@ -40,9 +40,7 @@ class CreateAdmissionFormsTable extends Migration
             $table->string('reason');
             $table->string('extra_curricular');
             $table->string('admission_seeking_level');
-            $table->string('semester');
             $table->string('school');
-            $table->string('level_1');
             $table->string('board_1');
             $table->string('full_marks_1');
             $table->string('obtained_marks_1');
