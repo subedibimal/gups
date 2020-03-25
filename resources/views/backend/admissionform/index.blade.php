@@ -47,8 +47,8 @@
                             @foreach($admissions as $admission)
                                 <tr>
                                     <td>{{$admission->id}}</td>
-                                    <td>{{$admission->full_name}}</td>
-                                    <td>{{$admission->email}}</td>
+                                    <td>{{$admission->first_name}}</td>
+                                    <!-- <td>{{$admission->email}}</td> -->
                                     <td>{{$admission->mobile_no}}</td>
                                     <td>{{date('d M Y, D', strtotime($admission->updated_at))}}</td>
                                     <td>

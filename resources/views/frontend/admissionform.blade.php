@@ -37,13 +37,15 @@
             <div class="personal-details">
            
     <!-- Banner -->
+    
+    <section id="form" class="img-fluid">
+   <div style="color:red;">
     @if($errors->any())
       @foreach ($errors->all() as $error)
           <div>{{ $error }}</div>
       @endforeach
     @endif
-    <section id="form" class="img-fluid">
-    
+    </div>
     <div class="form">
               <h5 class="head-a">General Information</h5>
                 <label class="w-100">Name of the Student<i>(In Block Letter)</i><span>*</span></label>

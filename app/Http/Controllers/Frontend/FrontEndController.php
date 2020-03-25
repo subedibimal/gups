@@ -99,6 +99,7 @@ class FrontEndController extends Controller
     }
     public function admissionform_store(Request $request)
     {
+        // dd($request->all());
        $this->validate($request,[
            'first_name'=>'required',
            'last_name'=>'required',

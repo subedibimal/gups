@@ -58,7 +58,7 @@ class CreateAdmissionFormsTable extends Migration
             $table->string('remarks_4')->nullable();
             $table->string('total_obtained_marks')->nullable();
             $table->string('total_marks')->nullable();
-            // $table->boolean('status')->default(1);
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }
