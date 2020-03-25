@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 text-right mb-5">
-                            <button type="submit" value="submit" class="btn btn-submit mt-3">Submit</button>
+                            <button type="submit" value="submit" class="btn btn-primary btn-submit mt-3">Submit</button>
                         </div>
                         {{csrf_field()}}
                     </form>

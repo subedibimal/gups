@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Input;
 
 Route::get('/', 'Frontend\FrontEndController@index');
 
-
 Route::group(['namespace' => 'Frontend'], function () {
     /**********************************Frontend************************************/
     Route::get('/front', 'FrontEndController@index')->name('frontend.home');
@@ -29,11 +28,12 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::get('/front/admissionform', 'FrontEndController@admissionform')->name('frontend.admissionform');
     Route::post('front/contactus/enquiry', 'FrontEndController@enquiry')->name('frontend.enquiry');
     Route::post('front/admission/admissionform', 'FrontEndController@admissionform_store')->name('frontend.admissionform_store');
-    Route::get('front/gallery_category', 'FrontEndController@gallery_category')->name('frontend.gallery_category');
+    Route::get('/front/gallery_category', 'FrontEndController@gallery_category')->name('frontend.gallery_category');
     Route::get('front/gallery/{id}', 'FrontEndController@gallery')->name('frontend.gallery');
     Route::get('/front/viewallevents', 'FrontEndController@viewallevents')->name('frontend.viewallevents');
     Route::get('/front/subject/{id}', 'FrontEndController@subject')->name('frontend.subject');
     Route::get('/front/program', 'FrontEndController@program')->name('frontend.program');
+    Route::get('/front/blog', 'FrontEndController@blog')->name('frontend.blog');
     Route::get('/front/vacancy', 'FrontEndController@vacancy')->name('frontend.vacancy');
     /**********************************Frontend************************************/
 });

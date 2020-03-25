@@ -26,7 +26,8 @@
                 <div class="col-lg-9 col-md-9 col-sm-12 pt-5">
                     <div class="about">
                         <p>
-                            {!!get_info('admission')!!}
+                         <!-- {{get_info('admission')}} -->
+                         @include('frontend.admissionform')
                         </p>
                     </div>
                 </div>
