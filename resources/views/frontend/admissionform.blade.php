@@ -109,22 +109,22 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                     <label>Gender<span>*</span></label>
-                <input type="text" class="gender" name="gender" placeholder="">
+                <input type="text" class="gender" name="gender" value="{{old('gender')}}" placeholder="">
                 <div class="clearfix"></div>
                   </div>
                   <div class="col-md-3 col-sm-6 col-xs-12">
                                     <label>Nationality<span>*</span></label>
-                <input type="text" class="nationality" name="nationality" placeholder="">
+                <input type="text" class="nationality" name="nationality" value="{{old('nationality')}}" placeholder="">
                 <div class="clearfix"></div>
                   </div>
                   <div class="col-md-3 col-sm-6 col-xs-12">
                                     <label>Religion<span>*</span></label>
-                <input type="text" class="religion" name="religion" placeholder="">
+                <input type="text" class="religion" name="religion" value="{{old('religion')}}" placeholder="">
                 <div class="clearfix"></div>
                   </div>
                   <div class="col-md-3 col-sm-6 col-xs-12">
                     <label>Blood Group<span>*</span></label>
-                <input type="text" class="religion" name="blood_group" placeholder="">
+                <input type="text" class="religion" name="blood_group" value="{{old('blood_group')}}" placeholder="">
                 <div class="clearfix"></div>
                   </div>
                 </div>

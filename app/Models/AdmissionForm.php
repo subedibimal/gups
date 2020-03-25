@@ -17,8 +17,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class AdmissionForm extends Model
 {
-    protected $fillable=['full_name','dob_bs','dob_ad','gender','nationality','religion', 'blood_group','parent_name','address','home_no','mobile_no','office_no',
-    'admission_seeking_level','admission_seeking_as','bus_stop','school','board_1','reason', 'full_marks_1'. 'obtained_marks_1', 'remarks_1'
-,  'full_marks_2'. 'obtained_marks_2', 'remarks_2', 'full_marks_3'. 'obtained_marks_3', 'remarks_3','full_marks_4'. 'obtained_marks_4', 'remarks_4','total_marks'. 'total_obtained_marks', 'percent' , 'extra_curricular'];
+    protected $fillable = ['full_name','dob_bs','dob_ad','gender','nationality','religion', 'blood_group','parent_name','address','home_no','mobile_no','office_no',
+    'admission_seeking_level','admission_seeking_as','bus_stop','school','board_1','reason', 'full_marks_1', 'obtained_marks_1', 'remarks_1', 'full_marks_2', 'obtained_marks_2', 'remarks_2', 'full_marks_3', 'obtained_marks_3', 'remarks_3','full_marks_4','obtained_marks_4', 'remarks_4','total_marks', 'total_obtained_marks', 'percent' , 'extra_curricular'];
 }
 
