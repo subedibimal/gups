@@ -3,7 +3,7 @@
 @section('head')
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link href="https://cdn.jsdelivr.net/bootstrap.timepicker/0.2.6/css/bootstrap-timepicker.min.css" rel="stylesheet"/>
-    @endsection
+@endsection   
 @section('content')
     <div id="banner-area banner-bg" style="background: url(../frontend/images/banner.jpg);">
     <div class="banner-area banner-bg"  >   
@@ -35,75 +35,66 @@
           {{csrf_field()}}
           <div class="post-ad-form">
             <div class="personal-details">
+           
+    <!-- Banner -->
+    <section id="form" class="img-fluid">
+    @if($errors->any())
+      @foreach ($errors->all() as $error)
+          <div>{{ $error }}</div>
+      @endforeach
+    @endif
+    <div class="form">
               <h5 class="head-a">General Information</h5>
                 <label class="w-100">Name of the Student<i>(In Block Letter)</i><span>*</span></label>
-                <div class="block-input">
-                 <div class="block-letter">
-                    <div>
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                
-                </div>
-
-                <div>                  
-                <input type="text" class="name ml-2" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                
-                </div>
-                <div>                 
-                <input type="text" class="name ml-2" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
+                 <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                    <label>First Name<span>*</span></label>
+                <input type="text" class="first_name" name="first_name" value="{{old('first_name')}}" placeholder="">
+                <div class="clearfix"></div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <label>Middle Name</label>
+                <input type="text" class="middle_name" name="middle_name" value="{{old('middle_name')}}" placeholder="">
+                <div class="clearfix"></div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <label>Last Name<span>*</span></label>
+                <input type="text" class="last_name" name="last_name" value="{{old('last_name')}}" placeholder="">
+                <div class="clearfix"></div>
                 
                 </div>
                  </div>
+                 <!-- <div class="block-input">
+                 <div class="block-letter"> -->
                 <div class="clearfix"></div>
                 <div class="row">
                   <div class="col-md-6 col-sm-6 col-12">
                     <label>Date of Birth : B.S</label>
-                <input type="text" class="name" name="dob_bs" placeholder="">
-                <input type="text" class="name" name="dob_bs" placeholder="">
+                <input type="text" class="name" name="dob_bs" value="{{old('dob_bs')}}" placeholder="dd/mm/yyyy">
+                <!-- <input type="text" class="name" name="dob_bs" placeholder=""> -->
 
-                <input type="text" class="name ml-3" name="dob_bs" placeholder="">
-                <input type="text" class="name" name="dob_bs" placeholder="">
+                <!-- <input type="text" class="name ml-3" name="dob_bs" placeholder="">
+                <input type="text" class="name" name="dob_bs" placeholder=""> -->
 
-                <input type="text" class="name ml-3" name="dob_bs" placeholder="">
+                <!-- <input type="text" class="name ml-3" name="dob_bs" placeholder=""> -->
+                <!-- <input type="text" class="name" name="dob_bs" placeholder="">
                 <input type="text" class="name" name="dob_bs" placeholder="">
-                <input type="text" class="name" name="dob_bs" placeholder="">
-                <input type="text" class="name" name="dob_bs" placeholder="">
+                <input type="text" class="name" name="dob_bs" placeholder=""> -->
                   </div>
                   <div class="col-md-6 col-sm-6 col-12">
                     <label>A.D</label>
-                <input type="text" class="name" name="dob_ad" placeholder="">
-                <input type="text" class="name" name="dob_ad" placeholder="">
+                <input type="text" class="name" name="dob_ad" value="{{old('dob_ad')}}" placeholder="dd/mm/yyyy">
+                <!-- <input type="text" class="name" name="dob_ad" placeholder=""> -->
 
-                <input type="text" class="name ml-3" name="dob_ad" placeholder="">
-                <input type="text" class="name" name="dob_ad" placeholder="">
+                <!-- <input type="text" class="name ml-3" name="dob_ad" placeholder=""> -->
+                <!-- <input type="text" class="name" name="dob_ad" placeholder=""> -->
 
-                <input type="text" class="name ml-3" name="dob_ad" placeholder="">
+                <!-- <input type="text" class="name ml-3" name="dob_ad" placeholder=""> -->
+                <!-- <input type="text" class="name" name="dob_ad" placeholder="">
                 <input type="text" class="name" name="dob_ad" placeholder="">
-                <input type="text" class="name" name="dob_ad" placeholder="">
-                <input type="text" class="name" name="dob_ad" placeholder="">
+                <input type="text" class="name" name="dob_ad" placeholder=""> -->
                   </div>
+                </div>
                 </div>
                 </div>
                 <div class="row">
@@ -171,7 +162,7 @@
                         <table class="timetable_sub table-responsive">
                           <h5 class="head-c">Academic Performance In Previous Grade</h5>
                           <thead>
-                            <tr>}
+                            <tr>
                               <th>Subject</th> 
                               <th>Full Marks</th>
                               <th>Obtained Marks</th>
