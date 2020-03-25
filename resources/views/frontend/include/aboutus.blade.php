@@ -26,7 +26,7 @@
                 <div class="col-lg-9 col-md-9 col-sm-12 pt-5">
                     <div class="about">
                         <p>
-                            {!!$aboutus->description!!}
+                            {!!$aboutus->description??null!!}
                         </p>
                     </div>
                 </div>

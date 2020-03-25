@@ -15,7 +15,9 @@ class CreateAdmissionFormsTable extends Migration
     {
         Schema::create('admission_forms', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('full_name');
+            $table->string('first_name');
+            $table->string('middle_name')->nullable();
+            $table->string('last_name');
             // $table->string('email');
             $table->string('gender');
             $table->string('dob_bs');
@@ -38,7 +40,7 @@ class CreateAdmissionFormsTable extends Migration
             $table->string('bus_stop');
             $table->string('percent');
             $table->string('reason');
-            $table->string('extra_curricular');
+            $table->string('extra_curricular')->nullable();
             $table->string('admission_seeking_level');
             $table->string('school');
             $table->string('board_1');

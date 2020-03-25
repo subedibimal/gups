@@ -34,6 +34,7 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::get('/front/subject/{id}', 'FrontEndController@subject')->name('frontend.subject');
     Route::get('/front/program', 'FrontEndController@program')->name('frontend.program');
     Route::get('/front/blog', 'FrontEndController@blog')->name('frontend.blog');
+    Route::get('/front/blog_details/{id}', 'FrontEndController@blog_details')->name('frontend.blog_details');
     Route::get('/front/vacancy', 'FrontEndController@vacancy')->name('frontend.vacancy');
     /**********************************Frontend************************************/
 });
@@ -41,14 +42,14 @@ Route::group(['namespace' => 'Frontend'], function () {
 
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'namespace' => 'Backend'], function () {
     /**********************************AboutUs************************************/
-   
+
     Route::get('/aboutus', 'AboutUsController@getCreate')->name('get.aboutus.create');
     Route::post ('/aboutus', 'AboutUsController@postCreate')->name('post.aboutus.create');
     /**********************************AboutUs************************************/
     /**********************************LifeAtGUPS************************************/
     Route::get('/life_at_gups', 'LifeAtGUPSController@getCreate')->name('get.life_at_gups.create');
     Route::post('/life_at_gups', 'LifeAtGUPSController@postCreate')->name('post.life_at_gups.create');
-  
+
     /**********************************LifeAtGUPS************************************/
     /**********************************Backend Dashboard************************************/
     Route::match(['get', 'post'], '/dashboard', function () {
@@ -130,6 +131,12 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'namespace' => 'Bac
     /**********************************Semester or Program************************************/
     Route::resource('semester', 'SemesterController')->except('destroy');
     Route::get('semester/delete/{id}', 'SemesterController@destroy')->name('semester.destroy');
+        Route::resource('blog', 'BlogController')->except('destroy');
+    Route::get('/blogs/delete/{id}', 'BlogController@destroy')->name('blogs.destroy');
+    Route::get('/blogs/trash/{id}', 'BlogController@trash')->name('blogs.trash');
+    Route::get('/blogs/pending', 'BlogController@pending')->name('blogs.pending');
+    Route::get('/blogs/publish/{id}', 'BlogController@publish')->name('blogs.publish');
+
     /**********************************Semester or Program************************************/
     Route::post('ckeditor/upload', 'VacancyController@upload')->name('ckeditor.upload');
     Route::post('/upload_image', function() {

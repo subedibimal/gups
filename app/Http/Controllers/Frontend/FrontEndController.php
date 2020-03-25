@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
+use App\Blog;
 use App\Models\AboutUs;
 use App\Models\AdmissionForm;
 use App\Models\ApplyForAdmission;
@@ -98,44 +99,44 @@ class FrontEndController extends Controller
     }
     public function admissionform_store(Request $request)
     {
-//        dd($request->all());
-        $this->validate($request,[
-            'full_name'=>'required',
-            // 'email'=>'required',
-            'gender'=>'required',
-            'nationality'=>'required',
-            'dob_ad'=>'required',
-            'dob_bs'=>'required',
-            // 'religion'=>'required',
-            // 'province'=>'required',
-            // 'zone'=>'required',
-            // 'district'=>'required',
-            // 'municipality'=>'required',
-            // 'ward'=>'required',
-            // 'village'=>'required',
-            'parent_name'=>'required',
-            // 'qualification'=>'required',
-            'home_no'=>'required',
-            'mobile_no'=>'required',
-            'office_no'=>'required',
-            // 'afu_symbol_no'=>'required',
-            // 'submission_no'=>'required',
-            // 'afu_entrance_score'=>'required',
-            // 'merit_no'=>'required',
-            // 'admission_seeking_level'=>'required',
-            // 'semester'=>'required',
-            // 'school'=>'required',
-            // 'level_1'=>'required',
-            'board_1'=>'required',
-            // 'institution_details_1'=>'required',
-            // 'passed_year_1'=>'required',
-            // 'percent_grade_1'=>'required',
-        ]);
+       $this->validate($request,[
+           'first_name'=>'required',
+           'last_name'=>'required',
+           // 'email'=>'required',
+           'gender'=>'required',
+           'nationality'=>'required',
+           'dob_ad'=>'required',
+           'dob_bs'=>'required',
+           // 'religion'=>'required',
+           // 'province'=>'required',
+           // 'zone'=>'required',
+           // 'district'=>'required',
+           // 'municipality'=>'required',
+           // 'ward'=>'required',
+           // 'village'=>'required',
+           'parent_name'=>'required',
+           // 'qualification'=>'required',
+           'home_no'=>'required',
+           'mobile_no'=>'required',
+           'office_no'=>'required',
+           // 'afu_symbol_no'=>'required',
+           // 'submission_no'=>'required',
+           // 'afu_entrance_score'=>'required',
+           // 'merit_no'=>'required',
+           // 'admission_seeking_level'=>'required',
+           // 'semester'=>'required',
+           // 'school'=>'required',
+           // 'level_1'=>'required',
+           'board_1'=>'required',
+           // 'institution_details_1'=>'required',
+           // 'passed_year_1'=>'required',
+           // 'percent_grade_1'=>'required',
+       ]);
         $input = $request->all();
         AdmissionForm::create($input);
         toastr()->success('You have applied successfully');
         return redirect()->back();
-        
+
     }
 
     public function gallery(Request $request, $id)
@@ -181,7 +182,7 @@ class FrontEndController extends Controller
     {
         return view('frontend.admissionform');
         // return view('frontend.admission');
-    
+
     }
 
     public function facility()
@@ -195,7 +196,12 @@ class FrontEndController extends Controller
     }
     public function blog()
     {
-        return view('frontend.include.blog');
-    
+        $blogs=Blog::where('status',1)->get();
+        return view('frontend.include.blog',compact('blogs'));
+
+    }
+    public function blog_details($id){
+        $blog=Blog::where('status',1)->where('id',$id)->first();
+        return view('frontend.include.blog_details',compact('blog'));
     }
 }
