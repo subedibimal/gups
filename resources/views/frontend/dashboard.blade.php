@@ -252,7 +252,7 @@
         <h5>ADMISSION OPEN FOR ACADEMIC YEAR 2076/077</h5>
         <p>ADMISSION FORM</p>
         <p>To Fill Admission Form</p>
-        <button class="btn btn-outline-info btn-lg admission-apply">Apply</button>
+        <button class="btn btn-outline-info btn-lg admission-apply"><a href="{{url('/front/admission')}}">Apply</a></button>
       </div>
       <div class="col-lg-6 col-md-6 nopadding admission-notice pb-2">
           <h2 class="text-center pt-5">NoticeBoard</h2>

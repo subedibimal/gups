@@ -27,26 +27,27 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="{{url('/')}}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('/front/aboutus')}}">About us</a></li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Information<i class="fas fa-caret-down pl-1"></i></a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
-                                <li class="nav-item"><a class="nav-link" href="course-details.html">Academic Information</a></li>
-                                <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a>
-                                <li class="nav-item"><a class="nav-link" href="#">Carrer</a></li>
-                                <li class="nav-item"><a class="nav-link" href="course-details.html">General Information</a></li>
-                                <li class="nav-item"><a class="nav-link" href="course-details.html">Message From Chairman</a></li>
-                                <li class="nav-item"><a class="nav-link" href="principle.html">Message From Principle</a></li>
-                                <li class="nav-item"><a class="nav-link" href="course-details.html">Schoolarship</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{('/front/program')}}">Activities</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Academic Information</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{('/front/admission/')}}">Admission</a>
+                                <li class="nav-item"><a class="nav-link" href="{{('/front/vacancy')}}">Career</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">General Information</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{('/front/chairman_message')}}">Message From Chairman</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{('/front/md_message')}}">Message From Principle</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('/front/scholarship')}}">Scholarship</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="blog.html">Student Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('/front/blog')}}">Student Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Calender</a></li>
-                        <li class="nav-item"><a class="nav-link" href="event.html">News & Events</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallerycategories.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('/front/viewallevents')}}">News & Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('/front/admission')}}">Admission</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('/front/gallery_category')}}">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('/front/contactus')}}">Contact Us</a></li>
                     </ul>
                 </div>
             </div>

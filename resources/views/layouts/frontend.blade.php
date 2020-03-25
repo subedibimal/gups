@@ -12,9 +12,6 @@
 
 @include('frontend.include.footer')
 
-
-
-
 @include('frontend.include.script')
 {!! toastr()->render() !!}
 </body>

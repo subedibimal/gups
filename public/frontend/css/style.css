@@ -942,7 +942,7 @@ span.like {
 #form
 {
   width: 100%;
-  background: none;
+  background:none;
   height: auto;
 }
 #form h2
@@ -974,15 +974,17 @@ span.like {
     font-weight: 400;
     float: left;
     width: 16%;
-    text-align: right;
     margin-right: 4%;
+}
+.block-letter input {
+  float: left;
 }
 .post-ad-form form label span {
   color:red;
 }
 .post-ad-form input[type="text"] {
     padding: 5px 10px 5px 10px;
-    width: 45%;
+    width: 100%;
     margin-bottom: 25px;
     outline: none;
     color: #555;
@@ -991,7 +993,6 @@ span.like {
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
-  float: left;
 }
 .post-ad-form textarea {
     height: 180px;
@@ -1061,13 +1062,39 @@ pre
     text-transform: capitalize;
     margin-bottom: 8px;
     color: #000;
-    margin-top: 10px;
     display: block;
     font-weight: 400;
-    float: left;
-    width: 16%;
-    text-align: right;
     margin-right: 4%;
+}
+.form-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 0px;
+}
+.activities {
+  display: flex;
+  overflow: auto;
+} 
+@media (max-width: 576px) {
+  .activities {
+    display: block;
+    margin-left: 0px;
+  }
+  .head-c {
+    width: 300px;
+  }
+}
+@media (max-width: 320px){
+  .head-c {
+    width: 262px;
+  }
+}
+.activities span{
+  display:flex; 
+  margin-left: 20px;
+}
+.block-input input {
+  width: 40px!important;
 }
 .btn-harry
 {
@@ -1105,7 +1132,7 @@ table.timetable_sub {
     border-right: 2px solid #fff;
 }
 .timetable_sub th, .timetable_sub td {
-    text-align: center;
+    text-align: left;
     padding: 7px;
     font-size: 14px;
     color: #212121;
