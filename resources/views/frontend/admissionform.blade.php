@@ -6,7 +6,7 @@
     @endsection
 @section('content')
     <div id="banner-area banner-bg" style="background: url(../frontend/images/banner.jpg);">
-    <div class="banner-area banner-bg"  >   
+    <div class="banner-area banner-bg"  >
     <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -26,7 +26,7 @@
     <!-- Banner -->
     <section id="form" class="img-fluid">
     <div class="form">
-      
+
       <div class="submit-ad main-grid-border">
         <div class="container bg-white my-4 p-0">
           <h2 class="text-center pt-5 pb-2" style="color: #0099E5;">Fill up the Form</h2>
@@ -50,10 +50,10 @@
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                
+
                 </div>
 
-                <div>                  
+                <div>
                 <input type="text" class="name ml-2" name="full_name" value="{{old('full_name')}}"placeholder="">
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
@@ -62,9 +62,9 @@
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                
+
                 </div>
-                <div>                 
+                <div>
                 <input type="text" class="name ml-2" name="full_name" value="{{old('full_name')}}"placeholder="">
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
@@ -73,7 +73,7 @@
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
                 <input type="text" class="name" name="full_name" value="{{old('full_name')}}"placeholder="">
-                
+
                 </div>
                  </div>
                 <div class="clearfix"></div>
@@ -146,7 +146,7 @@
                     <input type="text" class="office" name="office_no" value="{{old('office_no')}}" placeholder="Mother">
                   </div>
                 </div>
-            
+
                <div class="my-4">
                   <h5 class="head-b">Academics</h5>
                     <label>Admission Seeking For(Grade/Stream):<span>*</span></label>
@@ -171,8 +171,8 @@
                         <table class="timetable_sub table-responsive">
                           <h5 class="head-c">Academic Performance In Previous Grade</h5>
                           <thead>
-                            <tr>}
-                              <th>Subject</th> 
+                            <tr>
+                              <th>Subject</th>
                               <th>Full Marks</th>
                               <th>Obtained Marks</th>
                               <th>Remarks</th>
@@ -241,9 +241,9 @@
              <button type="submit" class="btn btn-harry">Submit</button>
           </div>
         </form>
-      </div> 
+      </div>
     </div>
-  </div>    
+  </div>
 </section>
 <!-- <section id="form" class="img-fluid" >
     <div class="form" >
@@ -269,10 +269,10 @@
                 <input type="text" class="name" placeholder="">
                 <input type="text" class="name" placeholder="">
                 <input type="text" class="name" placeholder="">
-                
+
                 </div>
 
-                <div>                  
+                <div>
                 <input type="text" class="name ml-2" placeholder="">
                 <input type="text" class="name" placeholder="">
                 <input type="text" class="name" placeholder="">
@@ -281,9 +281,9 @@
                 <input type="text" class="name" placeholder="">
                 <input type="text" class="name" placeholder="">
                 <input type="text" class="name" placeholder="">
-                
+
                 </div>
-                <div>                 
+                <div>
                 <input type="text" class="name ml-2" placeholder="">
                 <input type="text" class="name" placeholder="">
                 <input type="text" class="name" placeholder="">
@@ -292,7 +292,7 @@
                 <input type="text" class="name" placeholder="">
                 <input type="text" class="name" placeholder="">
                 <input type="text" class="name" placeholder="">
-                
+
                 </div>
                  </div>
                 </div>
@@ -316,7 +316,7 @@
                             <div class="clearfix"></div>
 </div>
                 </div>
-            
+
                             <label>Father's/Mother's Name<span>*</span></label>
                             <input type="text" class="name" name="parent_name" value="{{old('parent_name')}}" placeholder=""required>
                             <div class="clearfix"></div>
@@ -335,7 +335,7 @@
                                     <input type="text" class="office"  name="office_no" value="{{old('office_no')}}" placeholder="office"required>
                                 </div>
                             </div>
-                           
+
                             <div class="row" >
                                 <div class="col-md-6 academicrecord" >
                                     <label>Admission Seeking For Level<span>*</span></label>

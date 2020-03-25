@@ -22,7 +22,7 @@ class CreateAdmissionFormsTable extends Migration
             $table->string('dob_ad');
             $table->string('nationality');
             $table->string('religion');
-            $table->string('province');
+//            $table->string('province');
             // $table->string('zone');
             // $table->string('district');
             // $table->string('municipality');
