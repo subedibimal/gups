@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
+use App\Blog;
 use App\Models\AboutUs;
 use App\Models\AdmissionForm;
 use App\Models\ApplyForAdmission;
@@ -194,7 +195,12 @@ class FrontEndController extends Controller
     }
     public function blog()
     {
-        return view('frontend.include.blog');
+        $blogs=Blog::where('status',1)->get();
+        return view('frontend.include.blog',compact('blogs'));
 
+    }
+    public function blog_details($id){
+        $blog=Blog::where('status',1)->where('id',$id)->first();
+        return view('frontend.include.blog_details',compact('blog'));
     }
 }

@@ -198,6 +198,36 @@
 
                     </ul>
                 </li>
+                                <li class="nav-item has-treeview">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-envelope"></i>
+                                        <p>
+                                            Blog
+                                            <i class="fas fa-angle-left right"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="{{route('blog.create')}}" class="nav-link">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p>Add New</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="{{route('blog.index')}}" class="nav-link">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p>View All</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="{{route('blogs.pending')}}" class="nav-link">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p>Trash</p>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
                 <li class="nav-item">
                     <a href="{{route('gallery.index')}}" class="nav-link">
                         <i class="fas fa-images"></i>
@@ -230,7 +260,7 @@
                         </p>
                     </a>
                 </li>
-                
+
                 <li class="nav-item">
                     <a href="{{route('enquiry.index')}}" class="nav-link">
                         <i class="fas fa-question-circle"></i>

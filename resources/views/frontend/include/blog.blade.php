@@ -26,51 +26,23 @@
   <div class="container" >
     <div class="row" >
       <div class="col-lg-9 mt-5" >
+          @foreach($blogs as $blog)
         <div class="row blog-all" >
           <div class="col-lg-3" >
             <div class="blog-image" >
-              <img src="images/gups11.jpg" class="img-fluid" >
+              <img src="{{url('/').Storage::url($blog->image)}}" class="img-fluid" >
             </div>
           </div>
           <div class="col-lg-9" >
               <div class="blog-detail" >
-                <h4>MY JOURNEY</h4>
-                <h6>-Ashish Thapa</h6>
-                <p><i class="fas fa-calendar-alt pr-1"></i> 2019/12/01 <a href="detail.html"><img src="images/readarticle.png"></a></p>
+                <h4>{{ucfirst($blog->title)}}</h4>
+                <h6>-{{ucfirst($blog->posted_by)}}</h6>
+                <p><i class="fas fa-calendar-alt pr-1"></i> {{$blog->date}} <a href="{{route('frontend.blog_details',[$blog->id])}}"><img src="{{asset('images/readarticle.png')}}"></a></p>
               </div>
           </div>
-          <p class="paragraph pl-2" >Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-        </div>
-        <div class="row blog-all" >
-          <div class="col-lg-3" >
-            <div class="blog-image" >
-              <img src="images/gups11.jpg" class="img-fluid" >
-            </div>
-          </div>
-          <div class="col-lg-9" >
-              <div class="blog-detail" >
-                <h4>MY JOURNEY</h4>
-                <h6>-Ashish Thapa</h6>
-                <p><i class="fas fa-calendar-alt pr-1"></i> 2019/12/01 <a href="detail.html"><img src="images/readarticle.png"></a></p>
-              </div>
-          </div>
-          <p class="paragraph pl-2" >Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-        </div>
-        <div class="row blog-all" >
-          <div class="col-lg-3" >
-            <div class="blog-image" >
-              <img src="images/gups11.jpg" class="img-fluid" >
-            </div>
-          </div>
-          <div class="col-lg-9" >
-              <div class="blog-detail" >
-                <h4>MY JOURNEY</h4>
-                <h6>-Ashish Thapa</h6>
-                <p><i class="fas fa-calendar-alt pr-1"></i> 2019/12/01 <a href="detail.html"><img src="images/readarticle.png"></a></p>
-              </div>
-          </div>
-          <p class="paragraph pl-2" >Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-        </div>
+            <p class="paragraph pl-2" >{!! $blog->description !!}</p></div>
+          @endforeach
+
         <nav aria-label="...">
           <ul class="pagination">
             <li class="page-item">
@@ -88,7 +60,7 @@
             <li class="page-item">
               <a class="page-link" href="#">Next</a>
             </li>
-          </ul> 
+          </ul>
         </nav>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 pt-5" >
