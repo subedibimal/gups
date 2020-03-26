@@ -288,7 +288,8 @@
                             <div class="cloud3" ></div>
                             <div class="cloud4" ></div>
                             <div class="wen" ></div>
-                            <p class="pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet illo consequatur perspiciatis optio totam repellat adipisci ut distinctio corporis beatae placeat quisquam quos expedita, pariatur nemo facilis! Incidunt, cum!
+                            <p class="pt-5 pb-3" >{{$lives}}
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet illo consequatur perspiciatis optio totam repellat adipisci ut distinctio corporis beatae placeat quisquam quos expedita, pariatur nemo facilis! Incidunt, cum!
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deleniti necessitatibus accusantium maiores, sunt delectus quo, quas qui, officia recusandae autem tempore error. Similique, quod, neque dolorem sunt velit aut adipisci explicabo quos fuga ut quaerat? Vel sunt, quidem ad quod soluta et assumenda dolores? Placeat sunt alias consectetur velit.
                             </p>
                             <a href="about.html">
