@@ -15,7 +15,7 @@ class CreateFooterDescription extends Migration
     {
         Schema::create('footer_description', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->String('title');
+            $table->String('title')->default('Gorkha United Public School');
             $table->longText('description');
             $table->timestamps();
         });

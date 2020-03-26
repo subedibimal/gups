@@ -38,6 +38,7 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::get('/front/vacancy', 'FrontEndController@vacancy')->name('frontend.vacancy');
     Route::get('/front/calender','FrontEndController@calender')->name('frontend.calender');
     Route::get('/front/life_at_gups', 'FrontEndController@life_at_gups');
+    Route::get('/front/footer_description', 'FrontEndController@footer_description');
     /**********************************Frontend************************************/
 });
 

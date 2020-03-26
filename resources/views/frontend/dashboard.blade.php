@@ -199,8 +199,8 @@
                                 <div class="col-lg-9 nopadding" >
                                     <div class="latestnewsdetail" >
                                         <a href="#">
-                                            <h6 class="mb-0">Undergraduate Career and Placement Week 2019</h6>
-                                            <p>November 25, 2019</p>
+                                            <h6 class="mb-0">Undergraduate Career and Placement Week 2020</h6>
+                                            <p>June 25, 2020</p>
                                         </a>
                                     </div>
                                 </div>
@@ -208,14 +208,14 @@
                             <div class="row mt-2" >
                                 <div class="col-lg-3" >
                                     <div class="latestnewsimages" >
-                                        <img src="{{asset('frontend/images/gups8.jpg')}}" class="img-fluid" >
+                                        <img src="{{asset('frontend/images/gups7.jpg')}}" class="img-fluid" >
                                     </div>
                                 </div>
                                 <div class="col-lg-9 nopadding" >
                                     <div class="latestnewsdetail" >
                                         <a href="#">
-                                            <h6 class="mb-0">Undergraduate Career and Placement Week 2019</h6>
-                                            <p>November 25, 2019</p>
+                                            <h6 class="mb-0">Blood Donation Programme</h6>
+                                            <p>November 25, 2020</p>
                                         </a>
                                     </div>
                                 </div>
@@ -223,14 +223,14 @@
                             <div class="row mt-2" >
                                 <div class="col-lg-3" >
                                     <div class="latestnewsimages" >
-                                        <img src="{{asset('frontend/images/gups8.jpg')}}" class="img-fluid" >
+                                        <img src="{{asset('frontend/images/gups6.jpg')}}" class="img-fluid" >
                                     </div>
                                 </div>
                                 <div class="col-lg-9 nopadding" >
                                     <div class="latestnewsdetail" >
                                         <a href="#">
-                                            <h6 class="mb-0">Undergraduate Career and Placement Week 2019</h6>
-                                            <p>November 25, 2019</p>
+                                            <h6 class="mb-0">New Year Programme</h6>
+                                            <p>April 13, 2020</p>
                                         </a>
                                     </div>
                                 </div>
@@ -288,10 +288,7 @@
                             <div class="cloud3" ></div>
                             <div class="cloud4" ></div>
                             <div class="wen" ></div>
-                            <p class="pt-5 pb-3" >{{$lives}}
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet illo consequatur perspiciatis optio totam repellat adipisci ut distinctio corporis beatae placeat quisquam quos expedita, pariatur nemo facilis! Incidunt, cum!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deleniti necessitatibus accusantium maiores, sunt delectus quo, quas qui, officia recusandae autem tempore error. Similique, quod, neque dolorem sunt velit aut adipisci explicabo quos fuga ut quaerat? Vel sunt, quidem ad quod soluta et assumenda dolores? Placeat sunt alias consectetur velit.
-                            </p>
+                            <p class="pt-5 pb-3" >{!!$lives->description!!}.</p>
                             <a href="about.html">
                                 <button class="btn btn-exploremore" >Explore More</button>
                             </a>

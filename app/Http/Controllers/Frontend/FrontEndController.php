@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 use App\Models\LifeAtGUPS;
+use App\Models\FooterDescription;
 use App\Blog;
 use App\Models\AboutUs;
 use App\Models\AdmissionForm;
@@ -39,11 +40,12 @@ class FrontEndController extends Controller
         $apply_subtitle = ApplyForAdmission::where('name', 'subtitle')->first();
         $apply_description = ApplyForAdmission::where('name', 'description')->first();
         $google_form_url = ApplyForAdmission::where('name', 'google_form_url')->first();
-
+        $lives=LifeAtGUPS::first();
+        // $footer=FooterDescription::first();
 
         return view('frontend.dashboard', compact('news', 'notices',
             'events', 'subjects', 'three_blocks', 'google_form_url',
-            'apply_description', 'apply_subtitle', 'apply_title'));
+            'apply_description', 'apply_subtitle', 'apply_title', 'lives'));
     }
     public function vacancy(){
         $vacancy_title=Vacancy::where('name','title')->first();
@@ -222,6 +224,13 @@ class FrontEndController extends Controller
         $lives=LifeAtGUPS::first();
         // where('status',1)->get();
         return view('frontend.dashboard',compact('lives'));
+
+    }
+    public function footer_description()
+    {
+        $footer=FooterDescription::first();
+        // where('status',1)->get();
+        return view('frontend.include.footer',compact('footer'));
 
     }
 }

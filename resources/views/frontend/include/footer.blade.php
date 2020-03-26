@@ -4,8 +4,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 footer-bottom-txt">
                 <h2 class="footerh2" ><a href="index.html">Gorkha United Public School</a></h2>
-                <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempore, perspiciatis earum reiciendis similique iusto atque, veniam cumque perferendis repudiandae est ratione qui sit iure quidem error, quia provident dignissimos!
-                </p>
+                <p class="pt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus esse repellendus amet libero consectetur ducimus animi voluptate magnam hic, voluptatum natus, veniam fugiat quibusdam ab rerum sapiente voluptatem explicabo unde ipsa provident numquam. Vitae ipsam ipsa autem veniam delectus dolores, laborum ea quae natus nobis error, similique a molestias in!</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer-bottom-txt bg6">
                 <h2>Quick Links</h2>
