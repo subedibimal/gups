@@ -36,6 +36,8 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::get('/front/blog', 'FrontEndController@blog')->name('frontend.blog');
     Route::get('/front/blog_details/{id}', 'FrontEndController@blog_details')->name('frontend.blog_details');
     Route::get('/front/vacancy', 'FrontEndController@vacancy')->name('frontend.vacancy');
+    Route::get('/front/calender','FrontEndController@calender')->name('frontend.calender');
+    Route::get('/front/life_at_gups', 'FrontEndController@life_at_gups');
     /**********************************Frontend************************************/
 });
 

@@ -288,8 +288,8 @@
                             <div class="cloud3" ></div>
                             <div class="cloud4" ></div>
                             <div class="wen" ></div>
-                            <p class="pt-5 pb-3" >Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries remaining essentially unchanged.<br>
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <p class="pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet illo consequatur perspiciatis optio totam repellat adipisci ut distinctio corporis beatae placeat quisquam quos expedita, pariatur nemo facilis! Incidunt, cum!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deleniti necessitatibus accusantium maiores, sunt delectus quo, quas qui, officia recusandae autem tempore error. Similique, quod, neque dolorem sunt velit aut adipisci explicabo quos fuga ut quaerat? Vel sunt, quidem ad quod soluta et assumenda dolores? Placeat sunt alias consectetur velit.
                             </p>
                             <a href="about.html">
                                 <button class="btn btn-exploremore" >Explore More</button>

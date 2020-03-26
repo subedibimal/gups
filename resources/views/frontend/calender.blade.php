@@ -1,16 +1,16 @@
 @extends('layouts.frontend')
-@section('title',' Events')
+@section('title',' Calendar')
 @section('content')
     <div class="banner-area banner-bg" style="background: url(../frontend/images/banner.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="banner">
-                        <h2 class="text-center">Events</h2>
+                        <h2 class="text-center">Calendar</h2>
                         <ul class="page-title-link">
                             <li><a href="{{url('/front')}}">Home</a><i class="fa fa-angle-double-right"
                                                                        aria-hidden="true"></i><a
-                                        href="{{url('/front/viewallevents')}}">Events</a></li>
+                                        href="{{url('/front/calender')}}">Calender</a></li>
                         </ul>
                     </div>
                 </div>
@@ -19,10 +19,10 @@
     </div>
     <!-- Banner -->
 
-    <!-- viewallevent -->
+    <!-- Calender -->
     <section id="viewallevent">
-        <!-- <h2 class="text-center pt-5 pb-5">CALENDAR</h2> -->
-        <div class="container mt-3">
+        <h2 class="text-center pt-5 pb-5">CALENDAR</h2>
+        <div class="container">
             <?php $i = 0; ?>
             @if($ev)
                 @foreach($ev as $events)
@@ -46,36 +46,16 @@
                                                                     <div class="monthevent text-center">{{date('M', strtotime($event['date']))}}</div>
                                                                 </div>
                                                         </div>
-                                                        <div class="col-lg-9 col-md-9 col-sm-9">
-                                                            <div class="nameevent">{{$event['title']}}</div>
-                                                            <div class="currentday">{{date('D', strtotime($event['date']))}}</div>
-                                                        </div>
-                                                </div>
-                                        </div>
+                                                        <!-- Calender    -->
+                                                        
+                                @endforeach
                                     </div>
-
-                                    @endforeach
-                                </div>
                                 <?php ++$i ?>
                                 @endforeach
-
-
                             </div>
-
                     </div>
                     @else
-                        <h3 class="text-center">No Events</h3>
+                        <h3 class="text-center">No Calendar Events</h3>
                     @endif
         </div>
     </section>
-    <!-- viewallevenet -->
-
-
-
-
-
-
-
-
-
-@endsection

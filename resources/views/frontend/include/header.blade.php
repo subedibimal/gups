@@ -43,7 +43,7 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{url('/front/blog')}}">Student Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Calender</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url('/front/calender')}}">Calender</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{url('/front/viewallevents')}}">News & Events</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{url('/front/admission')}}">Admission</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{url('/front/gallery_category')}}">Gallery</a></li>

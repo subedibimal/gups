@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
+use App\Models\LifeAtGUPS;
 use App\Blog;
 use App\Models\AboutUs;
 use App\Models\AdmissionForm;
@@ -204,5 +205,23 @@ class FrontEndController extends Controller
     public function blog_details($id){
         $blog=Blog::where('status',1)->where('id',$id)->first();
         return view('frontend.include.blog_details',compact('blog'));
+    }
+    public function calender(){
+        $events = NewsAndEvents::orderBy('date', 'ASC')->get();
+
+        $ev = $events->groupBy(function ($item) {
+            $da = change_date_format($item->date);
+            $updated_date = Carbon::createFromFormat('Y-m-d', $da)->format('M,Y');
+
+            return $updated_date;
+        })->toArray();
+        return view('frontend.calender',compact('ev'));
+    }
+    public function life_at_gups()
+    {
+        $lives=LifeAtGUPS::first();
+        // where('status',1)->get();
+        return view('frontend.dashboard',compact('lives'));
+
     }
 }
